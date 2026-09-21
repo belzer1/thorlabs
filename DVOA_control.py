@@ -1,12 +1,4 @@
 
-#WORKFLOW
-#create class for dvoa [done]
-#in class create methods for: 
-#create connection [done]
-#close connection 
-#set reference point 
-#step the attenuator 
-#create an attenuation range sweep 
 class DVOA:
     def __init__(self,port,baudrate,parity,stop_bits,flow_control):
         self.port=port 
