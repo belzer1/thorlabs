@@ -13,8 +13,6 @@ class OSW22_1310E_Switch:
                 if 'OSWxx' in desc:
                     port_=port
             return port_
-        # if find_port() is None:
-        #     raise Exception("OSW22-1310E switch not found")
         self.port = find_port()
         self.ser = serial.Serial(
             port=self.port,
